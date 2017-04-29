@@ -45,7 +45,7 @@ Then run:
 At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be downloaded.
 
 
-## 3- Set the ".box" file as the box of "ubuntu/trusty64" machines:
+## 3- Set the ".box" of "ubuntu/trusty64" machines:
 Run command:
 
 `vagrant box add PATH_TO_BOX_FILE --name "ubuntu/trusty64"`
@@ -60,9 +60,7 @@ In terminal:
 ## 5- (for NTFS partitions on Ubuntu):
 Add the following line before the **end** of the vagrant file:
 
-`
-config.ssh.insert_key=false
-`
+`config.ssh.insert_key=false`
 
 to avoid errors regarding owner & permissions of ssh private key file
 
