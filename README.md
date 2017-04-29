@@ -17,10 +17,14 @@
 
 
 ## 2- Download the `.box` file of `ubuntu/trusty64`:
+
 #### - Manual download:
 http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+
 OR
+
 https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box
+
 #### - [OR] Existing OVA backup
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
 
