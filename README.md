@@ -27,7 +27,7 @@ OR
 
 [ubuntu/boxes/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) (to specify a version)
 
-#### - [OR] Existing OVA backup
+#### - [OR] Existing OVA backup (pay attestion to UPPER_CASE variables)
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
 
 `
