@@ -23,12 +23,15 @@ OR
 https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box
 #### - [OR] Existing OVA backup
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
+
 `
 VBoxManage import PATH_TO_LOAD_OVA_FILE --vsys 0 --vmname "Ubuntu_64_Trusty" --eula accept
 `
+
 `
 VBoxManage list vms
 `
+
 Output: `"Ubuntu_64_Trusty" {UID_OF_MACHINE}`
 Then run:
 `
