@@ -71,7 +71,7 @@ to avoid errors regarding owner & permissions of ssh private key file
 ## 6- Launch/TurnOn the VM, connect via SSH:
 To turn on the machine, run:
 
-`vagrant up`
+`vagrant up --provision`
 
 To turn off / halt, run:
 
