@@ -1,8 +1,6 @@
-###############################
 
 # How to initialize `ubuntu/trusty64` Virtual Machine (via Vagrant & VirtualBox)
 
-###############################
 
 ## 1- Install Vagrant & VirtualBox:
 - Vagrant:
@@ -17,7 +15,6 @@
     - Ubuntu: https://www.virtualbox.org/wiki/Linux_Downloads
 
 
-###############################
 
 ## 2- Download the `.box` file of `ubuntu/trusty64`:
 #### - Manual download:
@@ -37,10 +34,9 @@ Then run:
 `
 vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE
 `
-#### - [OR ~(not recommended)~] Auto-download by vagrant
+#### - [OR (not recommended)] Auto-download by vagrant
 At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be downloaded.
 
-###############################
 
 ## 3- Set the ".box" file as the box of "ubuntu/trusty64" machines:
 Run command:
@@ -48,14 +44,12 @@ Run command:
 vagrant box add PATH_TO_BOX_FILE --name "ubuntu/trusty64"
 `
 
-###############################
 
 ## 4- Get the "vagrantfile" or initialize new one
 In terminal:
 - cd the directory containing the `vagrantfile`
 - [OR] cd a new directory & run: `vagrant init ubuntu/trusty64`
 
-###############################
 
 ## 5- (for NTFS partitions on Ubuntu)
 Add the following line before the **end** of the vagrant file:
@@ -64,7 +58,6 @@ config.ssh.insert_key=false
 ~
 to avoid errors regarding owner & permissions of ssh private key file
 
-###############################
 
 ## 6- Launch/TurnOn the VM
 To turn on the machine, run:
@@ -77,6 +70,4 @@ To connect to the machine via SSH, run:
 `vagrant ssh`
 
 ## 7- Enjoy ;)
-
-###############################
 
