@@ -18,7 +18,10 @@
 
 ## 2- Download the `.box` file of `ubuntu/trusty64`:
 
-#### - Manual download:
+#### - Manual download (recommended):
+
+Download the box file only once & use it whenever you like on many machines:
+
 [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 
 OR
