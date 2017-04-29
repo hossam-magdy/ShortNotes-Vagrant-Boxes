@@ -51,7 +51,7 @@ At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be do
 ## 3- Set the ".box" of "ubuntu/trusty64" machines:
 Run command:
 
-`vagrant box add PATH_TO_BOX_FILE --name "ubuntu/trusty64"`
+`vagrant box add PATH_TO_BOX_FILE --name "ubuntu/trusty64" --force`
 
 
 ## 4- Get the "vagrantfile" or initialize new one:
