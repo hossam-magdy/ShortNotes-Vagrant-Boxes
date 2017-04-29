@@ -33,10 +33,13 @@ VBoxManage list vms
 `
 
 Output: `"Ubuntu_64_Trusty" {UID_OF_MACHINE}`
+
 Then run:
+
 `
 vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE
 `
+
 #### - [OR (not recommended)] Auto-download by vagrant
 At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be downloaded.
 
