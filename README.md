@@ -5,25 +5,27 @@
 ## 1- Install Vagrant & VirtualBox:
 - Vagrant:
     The software that configures the VM and lets you share files between your host computer and the VM's filesystem
-    https://www.vagrantup.com/downloads.html
-    - Windows: https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4.msi
-    - Ubuntu: https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4_x86_64.deb
+    [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
+    - Windows: [https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4.msi](https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4.msi) 
+    - Ubuntu: [https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4_x86_64.deb](https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4_x86_64.deb) 
 - VirtualBox:
     The software that actually runs the VM.
-    https://www.virtualbox.org/wiki/Downloads
-    - Windows: http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe
-    - Ubuntu: https://www.virtualbox.org/wiki/Linux_Downloads
+    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) 
+    - Windows: [http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe](http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe) 
+    - Ubuntu: [https://www.virtualbox.org/wiki/Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads) 
 
 
 
 ## 2- Download the `.box` file of `ubuntu/trusty64`:
 
 #### - Manual download:
-http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+[trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 
 OR
 
-https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box
+[versions/20170422.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box) (to download a specific version)
+
+[ubuntu/boxes/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) (to specify a version)
 
 #### - [OR] Existing OVA backup
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
