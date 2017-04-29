@@ -31,7 +31,7 @@ OR
 [versions/20170422.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box) (to download a specific version)
 
 
-#### - [OR] Existing OVA backup (pay attestion to UPPER_CASE variables):
+#### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
 
 `VBoxManage import PATH_TO_LOAD_OVA_FILE --vsys 0 --vmname "Ubuntu_Trusty64" --eula accept`
@@ -44,7 +44,7 @@ Then run:
 
 `vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE`
 
-#### - [OR (not recommended)] Auto-download by vagrant:
+#### - [OR] Auto-download by vagrant (not recommended):
 At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be downloaded.
 
 
