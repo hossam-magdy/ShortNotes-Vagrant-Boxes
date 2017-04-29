@@ -59,20 +59,30 @@ In terminal:
 
 ## 5- (for NTFS partitions on Ubuntu)
 Add the following line before the **end** of the vagrant file:
-~
+
+`
 config.ssh.insert_key=false
-~
+`
+
 to avoid errors regarding owner & permissions of ssh private key file
 
 
 ## 6- Launch/TurnOn the VM
+
 To turn on the machine, run:
+
 `vagrant up`
+
 To turn off / halt, run:
+
 `vagrant halt`
+
 To check whether it is turned on/off, run:
+
 `vagrant status`
+
 To connect to the machine via SSH, run:
+
 `vagrant ssh`
 
 ## 7- Enjoy ;)
