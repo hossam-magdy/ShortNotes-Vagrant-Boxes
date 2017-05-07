@@ -22,14 +22,18 @@
 
 Download the box file only once & use it whenever you like on many machines:
 
-[trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
+Choose ubuntu box (trusty/xenial/...etc.) and version (v20170422.0.0, ...etc.)
+[https://atlas.hashicorp.com/ubuntu/boxes/](https://atlas.hashicorp.com/ubuntu/boxes/)
+
+Example download links:
+- For `trusty64` `v20170422.0.0`:
+[trusty64/versions/20170422.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box)
+- For `xenial32` `v20170503.1.0`:
+[xenial32/versions/20170503.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170503.1.0/providers/virtualbox.box)
 
 OR
 
-[ubuntu/boxes/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) (to specify a version)
-
-[versions/20170422.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box) (to download a specific version)
-
+Ubuntu/Trusty64: [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
 If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
@@ -86,4 +90,32 @@ To connect to the machine via SSH, run:
 `vagrant ssh`
 
 ## 7- Enjoy ;)
+
+
+# Possible Errors:
+
+### - Error 1:
+> No usable default provider could be found for your system.
+
+*OR*
+
+>The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+> Vagrant has detected that you have a version of VirtualBox installed
+that is not supported by this version of Vagrant. Please install one of
+the supported versions listed below to use Vagrant:
+
+**Cause**: VirtualBox version is not compatible with Vagrant version.
+
+**Solution**: Make sure you installed latest version of both.
+
+### - Error 2:
+
+> ... 'pwd': No such file or directory - getcwd (Errno::ENOENT)
+
+**Cause**: Your terminal is cd'ed to a non-existing directory.
+
+**Solution**: Make sure you cd the directory where `vagrantfile` exists.
 
