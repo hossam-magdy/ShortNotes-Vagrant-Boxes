@@ -94,10 +94,11 @@ To connect to the machine via SSH, run:
 
 # Possible Errors:
 
-### - Error 1:
+### - Error 1: Vagrant can not see the provider `virtualbox`:
+
 > No usable default provider could be found for your system.
 
-*OR*
+*OR when running: `vagrant up --provider=virtualbox`*
 
 >The provider 'virtualbox' that was requested to back the machine
 'default' is reporting that it isn't usable on this system. The
@@ -111,7 +112,7 @@ the supported versions listed below to use Vagrant:
 
 **Solution**: Make sure you installed latest version of both. (If installing \*.deb on Ubuntu, use `sudo dpkg -i PATH_OF_DEB`)
 
-### - Error 2:
+### - Error 2: Can not run any `vagrant` command:
 
 > ... 'pwd': No such file or directory - getcwd (Errno::ENOENT)
 
@@ -119,7 +120,7 @@ the supported versions listed below to use Vagrant:
 
 **Solution**: Make sure you cd the directory where `vagrantfile` exists.
 
-### - Error 3:
+### - Error 3: Current user is not the owner of SSH private key:
 
 > The private key to connect to the machine via SSH must be owned
 by the user running Vagrant. This is a strict requirement from
@@ -133,4 +134,17 @@ running Vagrant:
 **Solution**:
 - Either use `sudo` with `vagrant` commands => `sudo vagrant up`.
 - {OR} move the vagrant folder to `ext` partition & remove the `.vagrant` folder.
+
+### - Error 4: Port already in use:
+
+> Vagrant cannot forward the specified ports on this VM, since they
+would collide with some other application that is already listening
+on these ports. The forwarded port to 8000 is already in use
+on the host machine.
+
+**Cause**: Another process is listening to the port assigned in `vagrantfile` (~ by default: 8000)
+
+**Solution**:
+- Either find out which process is using this port: `sudo netstat -peant | grep ":8000 "` & kill it.
+- {OR} Change the port assigned in the `vagrantfile`.
 
