@@ -121,7 +121,7 @@ the supported versions listed below to use Vagrant:
 
 **Solution**: Make sure you cd the directory where `vagrantfile` exists.
 
-### - Error 3: SSH file invalid permissions => should be 0600:
+### - Error 3: SSH file has invalid permissions => should be 0600:
 
 > The private key to connect to this box via SSH has invalid permissions
 set on it. The permissions of the private key should be set to 0600, otherwise SSH will
