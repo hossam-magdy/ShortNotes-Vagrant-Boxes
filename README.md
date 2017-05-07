@@ -1,6 +1,7 @@
 
 # How to initialize `ubuntu/{box}` Virtual Machine (via Vagrant & VirtualBox)
 
+{box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://atlas.hashicorp.com/ubuntu/boxes/)
 
 ## 1- Install Vagrant & VirtualBox:
 - Vagrant:
@@ -36,26 +37,26 @@ OR
 Ubuntu/Trusty64: [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
-If you have `.ova` backup of `ubuntu/trusty64`, run the following commands:
+If you have `.ova` backup of `ubuntu/{box}`, run the following commands:
 
-`VBoxManage import PATH_TO_LOAD_OVA_FILE --vsys 0 --vmname "Ubuntu_Trusty64" --eula accept`
+`VBoxManage import PATH_TO_LOAD_OVA_FILE --vsys 0 --vmname "Ubuntu_BOXNAME" --eula accept`
 
 `VBoxManage list vms`
 
-Output: `"Ubuntu_Trusty64" {UID_OF_MACHINE}`
+Output: `"Ubuntu_BOXNAME" {UID_OF_MACHINE}`
 
 Then run:
 
 `vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE`
 
 #### - [OR] Auto-download by vagrant (not recommended):
-At each host a vagrant `ubuntu/trusty64` is initialized, the box file will be downloaded.
+At each host a vagrant `ubuntu/{box}` is initialized, the box file will be downloaded.
 
 
-## 3- Set the ".box" of "ubuntu/trusty64" machines:
+## 3- Set the ".box" of "ubuntu/{box}" machines:
 Run command:
 
-`vagrant box add PATH_TO_BOX_FILE --name "ubuntu/trusty64" --force`
+`vagrant box add PATH_TO_BOX_FILE --name "ubuntu/{box}" --force`
 
 
 ## 4- Get the "vagrantfile" or initialize new one:
