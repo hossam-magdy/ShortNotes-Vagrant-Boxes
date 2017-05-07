@@ -109,7 +109,7 @@ the supported versions listed below to use Vagrant:
 
 **Cause**: VirtualBox version is not compatible with Vagrant version.
 
-**Solution**: Make sure you installed latest version of both.
+**Solution**: Make sure you installed latest version of both. (If installing \*.deb on Ubuntu, use `sudo dpkg -i PATH_OF_DEB`)
 
 ### - Error 2:
 
