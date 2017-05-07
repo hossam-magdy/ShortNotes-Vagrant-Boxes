@@ -1,5 +1,5 @@
 
-# How to initialize `ubuntu/trusty64` Virtual Machine (via Vagrant & VirtualBox)
+# How to initialize `ubuntu/{box}` Virtual Machine (via Vagrant & VirtualBox)
 
 
 ## 1- Install Vagrant & VirtualBox:
