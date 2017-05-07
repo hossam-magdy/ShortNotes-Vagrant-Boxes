@@ -121,7 +121,20 @@ the supported versions listed below to use Vagrant:
 
 **Solution**: Make sure you cd the directory where `vagrantfile` exists.
 
-### - Error 3: Current user is not the owner of SSH private key:
+### - Error 3: SSH file invalid permissions => should be 0600:
+
+> The private key to connect to this box via SSH has invalid permissions
+set on it. The permissions of the private key should be set to 0600, otherwise SSH will
+ignore the key. Vagrant tried to do this automatically for you but failed. Please set the
+permissions on the following file to 0600 and then try running this command again
+
+**Cause**:
+- The vagrant folder is on NTFS partition mounted in Ubuntu (NTFS filesystem doesn't support `chmod`).
+
+**Solution**:
+- Move the vagrant folder to `ext` partition. If problem persists, remove the `.vagrant` folder.
+
+### - Error 4: SSH file is not owned by the current user:
 
 > The private key to connect to the machine via SSH must be owned
 by the user running Vagrant. This is a strict requirement from
@@ -133,10 +146,10 @@ running Vagrant:
 - {OR} The vagrant folder is on NTFS partition mounted in Ubuntu (on NTFS the owner of files & folders is always `root`).
 
 **Solution**:
-- Either use `sudo` with `vagrant` commands => `sudo vagrant up`.
-- {OR} move the vagrant folder to `ext` partition & remove the `.vagrant` folder.
+- Move the vagrant folder to `ext` partition. If problem persists, remove the `.vagrant` folder.
+- {OR} Either use `sudo` with `vagrant` commands => `sudo vagrant up`.
 
-### - Error 4: Port already in use:
+### - Error 5: Port already in use:
 
 > Vagrant cannot forward the specified ports on this VM, since they
 would collide with some other application that is already listening
