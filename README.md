@@ -119,3 +119,18 @@ the supported versions listed below to use Vagrant:
 
 **Solution**: Make sure you cd the directory where `vagrantfile` exists.
 
+### - Error 3:
+
+> The private key to connect to the machine via SSH must be owned
+by the user running Vagrant. This is a strict requirement from
+SSH itself. Please fix the following key to be owned by the user
+running Vagrant:
+
+**Cause**:
+- User created the machine (first `vagrant up`) is not the same user trying to `vagrant up` it.
+- {OR} The vagrant folder is on NTFS partition mounted in Ubuntu (on NTFS the owner of files & folders is always `root`).
+
+**Solution**:
+- Either use `sudo` with `vagrant` commands => `sudo vagrant up`.
+- {OR} move the vagrant folder to `ext` partition & remove the `.vagrant` folder.
+
