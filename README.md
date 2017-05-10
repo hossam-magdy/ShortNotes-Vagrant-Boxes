@@ -1,5 +1,5 @@
 
-# How to initialize `ubuntu/{box}` Virtual Machine (via Vagrant & VirtualBox)
+# How to initialize ubuntu `{box}` Virtual Machine (via Vagrant & VirtualBox)
 
 {box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://atlas.hashicorp.com/ubuntu/boxes/)
 
@@ -34,7 +34,9 @@ Example download links:
 
 OR
 
-Ubuntu/Trusty64: [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
+- ubuntu/trusty64: [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
+- bento/ubuntu-16.04-i386: [bento/boxes/ubuntu-16.04-i386/versions/2.3.6/](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.6/providers/virtualbox.box)
+
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
 If you have `.ova` backup of `ubuntu/{box}`, run the following commands:
