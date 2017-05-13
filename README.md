@@ -1,5 +1,5 @@
 
-# How to initialize ubuntu `{box}` Virtual Machine (via Vagrant & VirtualBox)
+# How to initialize any Ubuntu `{box}` Virtual Machine (via Vagrant & VirtualBox)
 
 {box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://atlas.hashicorp.com/ubuntu/boxes/)
 
@@ -17,7 +17,7 @@
 
 
 
-## 2- Download the `.box` file of `ubuntu/trusty64`:
+## 2- Download the `.box` file:
 
 #### - Manual download (recommended):
 
@@ -39,15 +39,15 @@ OR
 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
-If you have `.ova` backup of `ubuntu/{box}`, run the following commands:
+If you have `.ova` backup, run the following commands:
 
-`VBoxManage import PATH_TO_LOAD_OVA_FILE --vsys 0 --vmname "Ubuntu_BOXNAME" --eula accept`
+`VBoxManage import PATH_TO_OVA_FILE --vsys 0 --vmname "Ubuntu_BOXNAME" --eula accept`
 
 `VBoxManage list vms`
 
-Output: `"Ubuntu_BOXNAME" {UID_OF_MACHINE}`
+Outputs: `"Ubuntu_BOXNAME" {UID_OF_MACHINE}`
 
-Then run:
+Copy the `UID_OF_MACHINE`, then run:
 
 `vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE`
 
