@@ -23,12 +23,12 @@
 
 Download the box file only once & use it whenever you like on many machines:
 
-Choose ubuntu box (trusty/xenial/...etc.) and version (v20170422.0.0, ...etc.)
+Choose ubuntu box (trusty/xenial/...etc.) and version (v20170602.0.0, ...etc.)
 [https://atlas.hashicorp.com/ubuntu/boxes/](https://atlas.hashicorp.com/ubuntu/boxes/)
 
 Example download links:
-- For `trusty64` `v20170422.0.0`:
-[trusty64/versions/20170422.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170422.0.0/providers/virtualbox.box)
+- For `trusty64` `v20170602.0.0`:
+[trusty64/versions/20170602.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170602.0.0/providers/virtualbox.box)
 - For `xenial32` `v20170503.1.0`:
 [xenial32/versions/20170503.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170503.1.0/providers/virtualbox.box)
 
