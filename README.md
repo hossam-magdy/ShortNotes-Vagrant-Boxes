@@ -31,10 +31,10 @@ Example download links:
 [ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 - For `xenial64` (16.04.2) `v20170706.0.0`:
 [ubuntu/boxes/xenial64/versions/20170706.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170706.0.0/providers/virtualbox.box)
-- For `laravel-homestead` `v2.1.0`
-[laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box)
 - For `bento/ubuntu-16.04-i386` `v2.3.6`:
 [bento/boxes/ubuntu-16.04-i386/versions/2.3.6/providers/virtualbox.box](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.6/providers/virtualbox.box)
+- For `laravel-homestead` `v2.1.0`
+[laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box)
 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
