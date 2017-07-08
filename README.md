@@ -27,10 +27,12 @@ Choose ubuntu box (trusty/xenial/...etc.) and version (v20170602.0.0, ...etc.)
 [https://atlas.hashicorp.com/ubuntu/boxes/](https://atlas.hashicorp.com/ubuntu/boxes/)
 
 Example download links:
-- For `trusty64` `v20170602.0.0`:
-[trusty64/versions/20170602.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170602.0.0/providers/virtualbox.box)
+- For `trusty64` `v20170619.0.0`:
+[trusty64/versions/20170619.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box)
 - For `xenial32` `v20170503.1.0`:
-[xenial32/versions/20170503.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170503.1.0/providers/virtualbox.box)
+[xenial32/versions/20170706.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170706.0.0/providers/virtualbox.box)
+- For `laravel-homestead` `v2.1.0`
+[laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box)
 
 OR
 
