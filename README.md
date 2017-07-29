@@ -7,13 +7,13 @@
 - Vagrant:
     The software that configures the VM and lets you share files between your host computer and the VM's filesystem
     [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
-    - Windows: [vagrant_1.9.4.msi](https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4.msi) 
-    - Ubuntu: [vagrant_1.9.4_x86_64.deb](https://releases.hashicorp.com/vagrant/1.9.4/vagrant_1.9.4_x86_64.deb) 
+    - Windows: [vagrant_1.9.7.msi](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7.msi)
+    - Ubuntu: [vagrant_1.9.7_x86_64.deb](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.deb)
 - VirtualBox:
     The software that actually runs the VM
-    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) 
-    - Windows: [VirtualBox-5.1.22-115126-Win.exe](http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe) 
-    - Ubuntu: [Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads) 
+    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+    - Windows: [VirtualBox-5.1.22-117224-Win.exe](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
+    - Ubuntu: [Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
 
 
 
@@ -23,18 +23,18 @@
 
 Download the box file only once & use it whenever you like on many machines:
 
-Choose ubuntu box (trusty/xenial/...etc.) and version (v20170619.0.0, ...etc.)
+Choose ubuntu box (trusty/xenial/...etc.) and version (20170619.0.0, ...etc.)
 [https://atlas.hashicorp.com/ubuntu/boxes/](https://atlas.hashicorp.com/ubuntu/boxes/)
 
 Example download links:
-- For `trusty64` (14.04.5) `v20170619.0.0`:
+- For `trusty64` (14.04.5) `20170619.0.0`:
 [ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
-- For `xenial64` (16.04.2) `v20170706.0.0`:
-[ubuntu/boxes/xenial64/versions/20170706.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170706.0.0/providers/virtualbox.box)
-- For `bento/ubuntu-16.04-i386` `v2.3.6`:
-[bento/boxes/ubuntu-16.04-i386/versions/2.3.6/providers/virtualbox.box](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.6/providers/virtualbox.box)
-- For `laravel-homestead` `v2.1.0`
-[laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box)
+- For `xenial64` (16.04.2) `20170728.0.0`:
+[ubuntu/boxes/xenial64/versions/20170728.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170728.0.0/providers/virtualbox.box)
+- For `bento/ubuntu-16.04-i386` `v2.3.8`:
+[bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box)
+- For `laravel-homestead` `v3.0.0`
+[laravel/boxes/homestead/versions/3.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/3.0.0/providers/virtualbox.box)
 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
