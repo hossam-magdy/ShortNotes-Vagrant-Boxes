@@ -7,13 +7,13 @@
 - Vagrant:
     The software that configures the VM and lets you share files between your host computer and the VM's filesystem
     [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
-    - Windows: [vagrant_1.9.7.msi](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7.msi)
+    - Windows: [vagrant_1.9.7_x86_64.msi](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.msi)
     - Ubuntu: [vagrant_1.9.7_x86_64.deb](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.deb)
 - VirtualBox:
-    The software that actually runs the VM
-    [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+    The software that actually runs the VM: 
+    [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) OR [virtualbox.org/wiki/Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
     - Windows: [VirtualBox-5.1.22-117224-Win.exe](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
-    - Ubuntu: [Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
+    - Ubuntu: [virtualbox-5.1_5.1.26-117224~Ubuntu~xenial_amd64.deb](http://download.virtualbox.org/virtualbox/5.1.26/virtualbox-5.1_5.1.26-117224~Ubuntu~xenial_amd64.deb)
 
 
 
@@ -24,9 +24,8 @@
 Download the box file only once & use it whenever you like on many machines:
 
 Choose ubuntu box (trusty/xenial/...etc.) and version (20170619.0.0, ...etc.)
-[https://atlas.hashicorp.com/ubuntu/boxes/](https://atlas.hashicorp.com/ubuntu/boxes/)
 
-Example download links:
+Example download links (base = [http://atlas.hashicorp.com/](http://atlas.hashicorp.com/)):
 - For `trusty64` (14.04.5) `20170619.0.0`:
 [ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
 - For `xenial64` (16.04.2) `20170728.0.0`:
@@ -64,6 +63,36 @@ Run command:
 In terminal:
 - cd the directory containing the `vagrantfile`
 - [OR] cd a new directory & run: `vagrant init ubuntu/trusty64`
+- Example of `vagrantfile`:
+
+```
+Vagrant.configure("2") do |config|
+  # VM Box
+  config.vm.box = "ubuntu/xenial64"
+  
+  # Forward/map ports
+  # https://www.vagrantup.com/docs/networking/forwarded_ports.html
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 3306, host: 3306
+  
+  # Custom synced/mapped folder, other than /vagrant
+  # https://www.vagrantup.com/docs/synced-folders/basic_usage.html
+  config.vm.synced_folder "D:/", "/d"
+  
+  # Auto run shell scripts on load
+  # https://www.vagrantup.com/docs/provisioning/basic_usage.html
+  # https://www.vagrantup.com/docs/provisioning/shell.html
+  config.vm.provision "shell", path: "config.sh"
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get -qqy update
+    echo "- This shell command runs once, during the first vagrant up since the last vagrant destroy, unless the --provision flag is set"
+    echo "- Or you can set `run: "always"` to the `config.vm.provision` line"
+  SHELL
+  
+  # for NTFS partitions on Ubuntu to avoid errors regarding owner & permissions of ssh private key file
+  #config.ssh.insert_key=false
+end
+```
 
 
 ## 5- (for NTFS partitions on Ubuntu):
