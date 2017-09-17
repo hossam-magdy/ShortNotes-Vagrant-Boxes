@@ -1,5 +1,5 @@
 
-# How to initialize any Ubuntu `{box}` Virtual Machine (via Vagrant & VirtualBox)
+# Initializing Vagrant `{box}` Machine
 
 {box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://atlas.hashicorp.com/ubuntu/boxes/)
 
