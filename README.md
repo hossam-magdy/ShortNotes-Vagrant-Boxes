@@ -50,7 +50,7 @@ Copy the `UID_OF_MACHINE`, then run:
 `vagrant package --base UID_OF_MACHINE --output PATH_TO_SAVE_BOX_FILE`
 
 #### - [OR] Auto-download by vagrant (not recommended):
-At each host a vagrant `ubuntu/{box}` is initialized, the box file will be downloaded.
+At each host a vagrant `ubuntu/{box}` is initialized, the box file will be downloaded & cached to the temp of local machine.
 
 
 ## 3- Set the ".box" of "ubuntu/{box}" machines:
