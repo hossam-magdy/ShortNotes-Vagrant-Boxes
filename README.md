@@ -1,7 +1,7 @@
 
 # Initializing Vagrant `{box}` Machine
 
-{box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://atlas.hashicorp.com/ubuntu/boxes/)
+{box} can be: `trusty64`, `xenial32`, `xenial64`, ... [choices](https://app.vagrantup.com/boxes/search)
 
 ## 1- Install Vagrant & VirtualBox:
 - Vagrant:
@@ -26,10 +26,10 @@ Download the box file only once & use it whenever you like on many machines:
 Choose ubuntu box (trusty/xenial/...etc.) and version (20170619.0.0, ...etc.)
 
 Example download links (base = [http://atlas.hashicorp.com/](http://atlas.hashicorp.com/)):
-- For `trusty64` (14.04.5) `20170619.0.0`:
-[ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170619.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
-- For `xenial64` (16.04.2) `20170728.0.0`:
-[ubuntu/boxes/xenial64/versions/20170728.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170728.0.0/providers/virtualbox.box)
+- For `trusty64` (14.04) `20170831.0.0`:
+[ubuntu/boxes/trusty64/versions/20170831.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170831.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
+- For `xenial64` (16.04) `20170914.2.0`:
+[ubuntu/boxes/xenial64/versions/20170914.2.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170914.2.0/providers/virtualbox.box)
 - For `bento/ubuntu-16.04-i386` `v2.3.8`:
 [bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box)
 - For `laravel-homestead` `v3.0.0`
