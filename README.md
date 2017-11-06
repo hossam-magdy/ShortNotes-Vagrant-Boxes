@@ -7,13 +7,13 @@
 - Vagrant:
     The software that configures the VM and lets you share files between your host computer and the VM's filesystem
     [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
-    - Windows: [vagrant_1.9.7_x86_64.msi](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.msi)
-    - Ubuntu: [vagrant_1.9.7_x86_64.deb](https://releases.hashicorp.com/vagrant/1.9.7/vagrant_1.9.7_x86_64.deb)
+    - Windows: [`vagrant_2.0.1_x86_64.msi`](https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.msi)
+    - Ubuntu: [`vagrant_2.0.1_x86_64.deb`](https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.deb)
 - VirtualBox:
     The software that actually runs the VM: 
-    [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) OR [virtualbox.org/wiki/Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
-    - Windows: [VirtualBox-5.1.22-117224-Win.exe](http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe)
-    - Ubuntu: [virtualbox-5.1_5.1.26-117224~Ubuntu~xenial_amd64.deb](http://download.virtualbox.org/virtualbox/5.1.26/virtualbox-5.1_5.1.26-117224~Ubuntu~xenial_amd64.deb)
+    [`virtualbox.org/wiki/Downloads`](https://www.virtualbox.org/wiki/Downloads) OR [virtualbox.org/wiki/Linux_Downloads](https://www.virtualbox.org/wiki/Linux_Downloads)
+    - Windows: [`VirtualBox-5.2.0-118431-Win.exe`](http://download.virtualbox.org/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Win.exe)
+    - Ubuntu: [`virtualbox-5.2_5.2.0-118431~Ubuntu~xenial_amd64.deb`](http://download.virtualbox.org/virtualbox/5.2.0/virtualbox-5.2_5.2.0-118431~Ubuntu~xenial_amd64.deb)
 
 
 
@@ -25,15 +25,15 @@ Download the box file only once & use it whenever you like on many machines:
 
 Choose ubuntu box (trusty/xenial/...etc.) and version (20170619.0.0, ...etc.)
 
-Example download links (base = [http://atlas.hashicorp.com/](http://atlas.hashicorp.com/)):
-- For `trusty64` (14.04) `20170831.0.0`:
-[ubuntu/boxes/trusty64/versions/20170831.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170831.0.0/providers/virtualbox.box) OR [trusty-server-cloudimg-amd64-vagrant-disk1.box](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) 
-- For `xenial64` (16.04) `20170914.2.0`:
-[ubuntu/boxes/xenial64/versions/20170914.2.0/providers/virtualbox.box](https://atlas.hashicorp.com/ubuntu/boxes/xenial32/versions/20170914.2.0/providers/virtualbox.box)
-- For `bento/ubuntu-16.04-i386` `v2.3.8`:
-[bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/2.3.8/providers/virtualbox.box)
-- For `laravel-homestead` `v3.0.0`
-[laravel/boxes/homestead/versions/3.0.0/providers/virtualbox.box](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/3.0.0/providers/virtualbox.box)
+Some download links (base = [`atlas.hashicorp.com`](https://atlas.hashicorp.com/), check latest versions at base = [`app.vagrantup.com`](https://app.vagrantup.com/)):
+- For `ubuntu/xenial64` => `Ubuntu Server 16.04 LTS (Xenial Xerus)`:
+[latest-daily-build](https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box) OR [`/ubuntu/boxes/xenial64/versions/20171028.0.0/providers/virtualbox.box`](https://atlas.hashicorp.com/ubuntu/boxes/xenial64/versions/20171028.0.0/providers/virtualbox.box)
+- For `ubuntu/trusty64` => `Ubuntu Server 14.04 LTS (Trusty Tahr)`:
+[latest-daily-build](http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box) OR [`/ubuntu/boxes/trusty64/versions/20171030.0.1/providers/virtualbox.box`](https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20171030.0.1/providers/virtualbox.box)
+- For `bento/ubuntu-16.04-i386`:
+[`/bento/boxes/ubuntu-16.04-i386/versions/201710.25.0/providers/virtualbox.box`](https://atlas.hashicorp.com/bento/boxes/ubuntu-16.04-i386/versions/201710.25.0/providers/virtualbox.box)
+- For `laravel-homestead`:
+[`/laravel/boxes/homestead/versions/4.0.0/providers/virtualbox.box`](https://atlas.hashicorp.com/laravel/boxes/homestead/versions/4.0.0/providers/virtualbox.box)
 
 
 #### - [OR] Existing OVA backup (pay attention to UPPER_CASE variables):
