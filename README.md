@@ -58,6 +58,8 @@ Run command:
 
 `vagrant box add PATH_TO_BOX_FILE --name "ubuntu/{box}" --force`
 
+(Example for xenial64: `vagrant box add ./xenial-server-cloudimg-amd64-vagrant.box --name "ubuntu/xenial64" --force`)
+
 
 ## 4- Get the "vagrantfile" or initialize new one:
 In terminal:
@@ -123,6 +125,11 @@ To connect to the machine via SSH, run:
 ## 7- Enjoy ;)
 
 
+
+# Recommendation (for Ubuntu users):
+- Use direct EXT-filesystem drive (not symlink from another filesystem) to  for flawless & clean usage.
+
+
 # Possible Errors:
 
 ### - Error 1: Vagrant can not see the provider `virtualbox`:
@@ -177,7 +184,7 @@ running Vagrant:
 
 **Solution**:
 - Move the vagrant folder to `ext` partition. If problem persists, remove the `.vagrant` folder.
-- {OR} Either use `sudo` with `vagrant` commands => `sudo vagrant up`.
+- {OR} use `sudo` with `vagrant` commands => `sudo vagrant up`.
 
 ### - Error 5: Port already in use:
 
@@ -189,6 +196,6 @@ on the host machine.
 **Cause**: Another process is listening to the port assigned in `vagrantfile` (~ by default: 8000)
 
 **Solution**:
-- Either find out which process is using this port: `sudo netstat -peant | grep ":8000 "` & kill it.
+- Find out which process is using this port (`sudo netstat -peant | grep ":8000 "`) & kill it: just run `port=8000 && sudo kill $(sudo lsof -i :${port} -t)`.
 - {OR} Change the port assigned in the `vagrantfile`.
 
