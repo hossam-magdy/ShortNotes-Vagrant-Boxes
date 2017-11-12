@@ -53,7 +53,7 @@ Copy the `UID_OF_MACHINE`, then run:
 At each host a vagrant `ubuntu/{box}` is initialized, the box file will be downloaded & cached to the temp of local machine.
 
 
-## 3- Set the ".box" of "ubuntu/{box}" machines:
+## 3- Add the `*.box` file for `ubuntu/{box}` machines:
 Run command:
 
 `vagrant box add PATH_TO_BOX_FILE --name "ubuntu/{box}" --force`
@@ -64,7 +64,7 @@ Run command:
 ## 4- Get the "vagrantfile" or initialize new one:
 In terminal:
 - cd the directory containing the `vagrantfile`
-- [OR] cd a new directory & run: `vagrant init ubuntu/trusty64`
+- [OR] cd a new directory & run: `vagrant init ubuntu/xenial64`
 - Example of `vagrantfile`:
 
 ```
